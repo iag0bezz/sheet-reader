@@ -16,7 +16,7 @@ export class UploadFileUseCase {
       if (columns) {
         const structure: Structure[] = [];
 
-        for (let index = 0; index < columns.length; index++) {
+        for (let index = 0; index < columns.length; index += 1) {
           const values: unknown[] = [];
 
           line.data.forEach(data => {
